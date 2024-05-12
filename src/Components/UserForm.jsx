@@ -152,13 +152,13 @@ const UserForm = ({ open, editId, handlClose }) => {
               <button
                 type="button"
                 onClick={handlClose}
-                className="flex w-[100px] mt-3 mr self-end text-center h-11 mr-3 items-center bg-blue-950 justify-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                className="flex w-[100px] mt-3 mr self-end text-center h-11 mr-3 items-center bg-blue-900 justify-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                className="flex w-[100px] mt-3 mr self-end text-center h-11 mr-3 items-center bg-blue-950 justify-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                className="flex w-[100px] mt-3 mr self-end text-center h-11 mr-3 items-center bg-blue-900 justify-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
               >
                 Save
               </button>

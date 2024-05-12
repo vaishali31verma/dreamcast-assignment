@@ -58,28 +58,16 @@ const Table = () => {
         <div className="flex fle-row justify-between items-center">
           <h1 className="text-2xl"> Users List</h1>
           <button
-            onClick={handleFormOpen}
+            onClick={() => setopen(true)}
             type="button"
-            className="flex w-[200px] mt-3 mr self-end text-center h-11 mr-3 items-center bg-blue-950 justify-center text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            className="flex w-56 mt-3   text-center h-11 mr-3 items-center bg-blue-900 justify-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
           >
-            <svg
-              className="h-[1.875rem] w-[1.875rem] mr-2 mt-2"
-              fill="currentColor"
-              viewbox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                clip-rule="evenodd"
-                fill-rule="evenodd"
-                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              />
-            </svg>
+          
             Add product
           </button>
         </div>
 
-        <div className="overflow-y-auto" style={{ height: "700px" }}>
+        <div className="overflow-y-auto" style={{ height: "800px" }}>
           <table className=" relative w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
@@ -115,7 +103,7 @@ const Table = () => {
                     <span>{element.address.city}</span>
                     <span>{element.address.zipcode}</span>
                   </td>
-                  <td className="px-4 relative" ref={ref}>
+                  <td className="px-4 relative" style={{position:'relative'}}ref={ref}>
                     <button
                       className="inline-flex items-center text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 p-1.5 dark:hover-bg-gray-800 text-center text-gray-500 hover:text-gray-800 rounded-lg focus:outline-none dark:text-gray-400 dark:hover:text-gray-100"
                       type="button"
@@ -144,11 +132,12 @@ const Table = () => {
                               className="flex w-full items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-gray-700 dark:text-gray-200"
                             >
                               <svg
-                                className="w-[25px] h-[25px] mr-2"
+                                className="mr-2"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewbox="0 0 20 20"
                                 fill="currentColor"
                                 aria-hidden="true"
+                                style={{width:'25px',height:'25px'}}
                               >
                                 <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
                                 <path
